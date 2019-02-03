@@ -364,9 +364,12 @@ border-color: #FFCB00;
         height: 95vh;
     }
     .owl-carousel .owl-item img {
-        height: 100%;
-        object-fit: cover;
-        width: auto;
+    display: block;
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    transform: translate(0%, -5%);
+
     }
 }
 
