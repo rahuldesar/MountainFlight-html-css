@@ -242,7 +242,7 @@
             </div>
         </div>
     </div>
-    <div class="black-bar">
+    <!-- <div class="black-bar">
         <div class="container">
             <h5>#Trending</h5>
             <ul>
@@ -254,14 +254,40 @@
             </ul>
         </div>
 
-    </div>
+    </div> -->
+    <section class="black-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Breaking News Wrapper Start -->
+                    <div class="breaking__wrapper">
+                        <!-- Breaking News Title -->
+                        <h5 class="breaking__title ">#Trending</h5>
+    
+                        <!-- Breaking Newsticker Start -->
+                        <ul class="breaking__ticker-active owl-carousel">
+                            <div>
+                                <a class="text-muted" href="#">Lorem ipsum dolor sit.</a>
+                            </div>
+                            <div>
+                                <a class="text-muted" href="#">asdasdass.</a>
+                            </div>
+                            
+                        </ul>
+                        <!-- Breaking Newsticker Start -->
+                    </div>
+                    <!-- Breaking News Wrapper End -->
+                </div>
+            </div>
+        </div>
+    </section>
 
 
     <section class="text-center container">
         <h1 class="font-beyond about">About</h1>
         <p class="text-muted">Mountain Flight in Nepal</p>
         <p class="text-muted section1-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ut molestias voluptas impedit dolorem cupiditate dolores atque magni minima quaerat in natus amet consequatur nesciunt temporibus repellat ipsam pariatur numquam dolore architecto, eum maiores facere repellendus. Similique esse ad voluptate quae commodi, hic laboriosam. Fuga voluptatum nobis nam fugiat iusto libero ea reiciendis ut, ducimus temporibus quibusdam. Aliquid qui ipsum totam officia modi inventore laboriosam voluptates id dolore veritatis ab magnam nihil quod quibusdam deleniti amet, voluptas maiores minus eveniet quae corrupti accusantium! Earum placeat quia odit natus dicta vitae velit consequuntur eum recusandae ipsum sunt voluptates, eveniet quasi ducimus possimus eos error accusantium? Accusamus quibusdam quos eveniet. Earum ipsum provident fugit? Consequuntur unde eveniet quam exercitationem. Obcaecati eveniet tempore totam. Esse nisi quas animi voluptatibus cupiditate quaerat pariatur, quod corrupti, quam eligendi maxime. Id molestias excepturi quas voluptate cumque distinctio at illum labore velit, laboriosam ratione consectetur soluta voluptatibus.</p>
-        <iframe class="videoWrapper" src="https://www.youtube.com/embed/5fcJz6uixUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        <iframe class="videoWrapper" src="http://www.youtube.com/embed/5fcJz6uixUs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
     </section>
     <section class="package ">
@@ -412,16 +438,11 @@
 
     </footer>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
-        crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script> -->
+    <script src="assests/vendor/jquery-3.3.1/jquery-3.3.1.min.js"></script>
     <script src="assests/vendor/bootstrap-4.1.3/js/bootstrap.min.js"></script>
     <script src="assests/vendor/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-
 
     <script>
     $('.banner').owlCarousel({
@@ -467,10 +488,30 @@
     </script>
 
     <script>
-        $(function () {
-            $("#datepicker").datepicker();
-        });
-    </script>
+     $(".breaking__ticker-active").owlCarousel({
+            loop: true,
+            margin: 0,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            items: 1,
+            navText: [
+                '<i class="fa fa-angle-left"></i>',
+                '<i class="fa fa-angle-right"></i>'
+            ],
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                767: {
+                    items: 1
+                },
+                992: {
+                    items: 1
+                }
+            }
+        });</script>
 </body>
 
 </html>
